@@ -1,0 +1,41 @@
+.banner{
+    width: 100%;
+    background-color: #40BFFF;
+}
+.banner__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.title{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 82px;
+    max-width: 590px;
+}
+.banner__text{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 20px 0;
+}
+.banner__btn{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    background-color: #40BFFF;
+}
+.banner__btn:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}

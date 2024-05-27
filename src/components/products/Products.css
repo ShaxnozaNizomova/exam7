@@ -1,0 +1,54 @@
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.card{
+    width: 300px;
+}
+.card:hover .btns {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    justify-content: space-around;
+}
+.card__title{
+    color: #223263;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: Poppins;
+}
+.card__price{
+    color: #40BFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Poppins;
+}
+.btns{
+    display: none;
+}
+.btn__box{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.btn__box button{
+    color: #223263;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Poppins;
+    border: 1px solid white;
+    background-color: white;
+}
+.btn__box button:hover{
+    color:#33A0FF;
+    border-bottom: 3px solid #33A0FF;
+}

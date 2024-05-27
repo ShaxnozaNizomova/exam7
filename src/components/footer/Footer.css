@@ -1,0 +1,37 @@
+.footer{
+    width: 100%;
+    background-color: #BCDDFE;
+}
+.footer__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer__card{
+    width: 220px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.logo{
+    padding-bottom: 10px;
+}
+.footer__title{
+    color: #22262A;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: Poppins;
+    padding-bottom: 22px;
+}
+.footer__text{
+    color: #22262A;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.footer__img{
+    padding-bottom: 40px;
+}

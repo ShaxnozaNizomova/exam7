@@ -1,0 +1,27 @@
+.support{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sup__card{
+    width: 200px;
+}
+.sup__title{
+    color: #22262A;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    padding: 15px 0;
+}
+.sup__text{
+    color: #22262A;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
