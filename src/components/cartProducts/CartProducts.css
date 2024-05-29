@@ -1,0 +1,114 @@
+.cart__items{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    max-width: 1380px;
+    margin: 0 auto;
+    border-bottom: 1px solid #F6F7F8;
+}
+.cart__contents{
+    display: flex;
+    max-width: 1320px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.check__btn{
+    width: 370px;
+    padding: 15px 0;
+    background-color: #33A0FF;
+    border: 1px solid #33A0FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Poppins;
+    margin-top: 8px;
+}
+.check__btn:hover{
+background-color: #FFFFFF;
+color: #33A0FF;
+cursor: pointer;
+}
+.card__total{
+    width: 370px;
+}
+.cart__total{
+    padding-bottom: 15px;
+    color: #22262A;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    font-family: Poppins;
+    padding-top: 20px;
+    border-top: 1px solid #F6F7F8;
+}
+.divs{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__input{
+    border: 2px solid #BCDDFE;
+    width: 200px;
+    padding: 16px;
+}
+.qty{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #F6F7F8;
+    background-color: #F6F7F8;
+    margin-bottom: 26px;
+}
+.cart__btn{
+    color: #33A0FF;
+    border: 0 solid transparent;
+    font-size: 18px;
+    padding: 0 5px ;
+}
+.cart__infos{
+    display: flex;
+    gap: 90px;
+}
+.cart__title1{
+    color: #22262A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+    padding-right: 500px;
+}
+.cart__title{
+    color: #22262A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+}
+.cart__titles{
+    color: #22262A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+    padding-bottom: 15px;
+}
+.cart__menu1{
+    padding-right: 900px;
+    color: #22262A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: Poppins;
+}
+.cart__menu{
+    color: #22262A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: Poppins;
+}
+.del__btn{
+    background-color: white;
+    border: 0 solid white;
+}

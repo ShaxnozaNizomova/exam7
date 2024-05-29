@@ -52,6 +52,7 @@ function Contact() {
             onChange={e => setData(p => ({...p, massage: e.target.value}))} 
              type="textarea" 
              placeholder='Type Your Massage'/>
+             <button className='check__btn'>Send</button>
         </form>
       </div>
      </div>

@@ -39,3 +39,27 @@
     border-bottom: 3px solid white;
     cursor: pointer;
 }
+@media screen and (max-width: 768px)  {
+    .banner__items{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    .banner__img{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 468px)  {
+    .banner__items{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    .banner__img{
+        width: 350px;
+        height: 270px;
+    }
+}

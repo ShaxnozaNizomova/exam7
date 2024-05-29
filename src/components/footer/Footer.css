@@ -35,3 +35,8 @@
 .footer__img{
     padding-bottom: 40px;
 }
+@media screen and (max-width: 768px)  {
+    .footer__img{
+        display: none;
+    }
+}

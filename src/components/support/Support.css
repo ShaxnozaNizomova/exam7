@@ -25,3 +25,11 @@
     font-size: 18px;
     line-height: 21px;
 }
+@media screen and (max-width: 768px)  {
+    .support{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+}

@@ -6,12 +6,14 @@ import Support from '../../components/support/Support'
 import News from '../../components/news/News'
 import Feature from '../../components/feature/Feature'
 import Search from '../../components/search/Search'
+import { useGetProductsQuery } from '../../context/api/productApi'
 
 function Home() {
+  let {data} = useGetProductsQuery()
   return (
     <div>
       <Hero/>
-      <Products/>
+      <Products data={data}/>
       <Banner/>
       <Support/>
       <News/>

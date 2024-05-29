@@ -34,3 +34,11 @@
     line-height: 21px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@media screen and (max-width: 768px)  {
+    .news__container{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+}

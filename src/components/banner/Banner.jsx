@@ -11,7 +11,7 @@ function Banner() {
             <button className='banner__btn'>Shop Now</button>
         </div> 
         <div>
-            <img src={banner} alt="banner" width={600} height={490}/>
+            <img className='banner__img' src={banner} alt="banner" width={600} height={490}/>
         </div>
       </div>
     </div>

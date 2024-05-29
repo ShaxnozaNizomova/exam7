@@ -1,28 +1,42 @@
 import React, { useState } from 'react'
 import './Products.css'
-import { useGetProductsQuery} from '../../context/api/productApi'
 import { Link } from 'react-router-dom'
 import rate from '../../assets/images/rate.svg'
-import heart from '../../assets/images/heart1.svg'
-import heart2 from '../../assets/images/heart2.svg'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../../context/cartSlice';
+import Skeleton from '../skeleton/Skeleton'
 import cart from '../../assets/images/Cart.svg'
-function Products() {
-  let {data} = useGetProductsQuery()
-  const [count, setCount] = useState(1)
-
+import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { toggleLike } from '../../context/wishlistSlice'
+function Products({data}) {
+  let wishlist = useSelector(state => state.wishlist.value)
+  const dispatch = useDispatch()
   let products = data?.map((el) => (
     <div key={el.id} className='card'>
-       <Link to={`/single/${el.id}`}><img src={el.image} alt={el.title} width={250} height={200} /></Link>
+       <img src={el.image} alt={el.title} width={250} height={200} />
        <div className='btns'>
-        <img src={heart} alt="like" width={23}/>
-        <img src={cart} alt="cart"/>
+       <button className='like__btn' onClick={()=> dispatch(toggleLike(el))}>
+        {
+          wishlist?.some(item => item.id === el.id) ? 
+          <FaHeart style={{color:"red"}}/> 
+          :
+          <FaRegHeart/>
+        }
+      </button>
+      <button className='like__btn' onClick={()=> dispatch(addToCart(el))}>
+          <img src={cart} alt="cart"/>
+      </button>
        </div>
-        <p className='card__title'>{el.title}</p>
+       <Link to={`/single/${el.id}`}><p className='card__title'>{el.title}</p></Link>
         <img src={rate} alt="" />
         <p className='card__price'> ${el.price} </p>
         <p className='banner__dis'><span>$534,33</span> 24% Off</p>
       </div>
   ))
+   if(!products){
+    return <Skeleton count={8}/>
+
+   }
   return (
       <div>
          <div className='products'>

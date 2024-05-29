@@ -54,3 +54,48 @@
     padding-left: 40px;
     text-transform: capitalize
 }
+.cart__single{
+    display: flex;
+    gap: 40px;
+}
+.add__btn{
+    background-color: #BCDDFE;
+    border: 1px solid #BCDDFE;
+    padding: 10px;
+    color: #33A0FF;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+@media screen and (max-width: 768px)  {
+    .bestselling{
+        display: none;
+    }
+    .tabs{
+        display: none;
+    }
+    .single__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        padding: 20px;
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 1094px)  {
+    .bestselling{
+        display: none;
+    }
+    .tabs{
+        display: none;
+    }
+    .single__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        padding: 20px;
+        max-width: 1000px;
+    }
+}

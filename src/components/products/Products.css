@@ -39,6 +39,10 @@
     justify-content: center;
     padding: 30px 0;
 }
+.like__btn{
+    border: 0 solid transparent;
+    background-color:lightgray;
+}
 .btn__box button{
     color: #223263;
     font-weight: 500;
@@ -51,4 +55,12 @@
 .btn__box button:hover{
     color:#33A0FF;
     border-bottom: 3px solid #33A0FF;
+}
+@media screen and (max-width: 768px)  {
+    .products{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
 }

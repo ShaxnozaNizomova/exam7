@@ -1,12 +1,13 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
-import { api } from "./api";
+import { api } from "./api/index";
 import wishlistSlice from './wishlistSlice'
+import cartSlice from "./cartSlice";
 export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
+    wishlist: wishlistSlice,
+    cart: cartSlice,
   },
-  wishlist: wishlistSlice,
-  cart: createSlice,
   middleware: (getDefaultMiddleware) =>
   getDefaultMiddleware().concat(api.middleware),
 });
