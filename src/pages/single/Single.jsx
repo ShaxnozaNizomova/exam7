@@ -33,7 +33,7 @@ function Single() {
        <div className='singlepage'>
      <div className='single__box'>
       <div className='single__img'>
-        <div>
+        <div className='big__img'>
            <img src={data?.image} alt="" width={375} height={270}/>
         </div>
         <div className='single__imgs'>

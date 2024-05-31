@@ -7,16 +7,14 @@
     padding: 0 20px;
     margin: 0 auto;
 }
-.card{
+.card {
+    position: relative; 
     width: 300px;
-}
-.card:hover .btns {
+  }
+  
+  .card:hover .btns {
     display: flex;
-    align-items: center;
-    border: 1px solid lightgray;
-    background-color: lightgray;
-    justify-content: space-around;
-}
+  }
 .card__title{
     color: #223263;
     font-weight: 700;
@@ -33,6 +31,17 @@
 }
 .btns{
     display: none;
+    position: absolute;
+    top: 28%; 
+    left: 38%; 
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    margin: 10px; 
+    border: 1px solid white;
+    width: 240px;
+    height: 180px;
+    justify-content: center;
+    gap: 10px;
 }
 .btn__box{
     display: flex;
@@ -52,6 +61,16 @@
     border: 1px solid white;
     background-color: white;
 }
+.btns button {
+    color: #223263;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Poppins;
+    border: 0 solid transparent;
+    background-color: transparent;
+    margin: 0 5px; 
+  }
 .btn__box button:hover{
     color:#33A0FF;
     border-bottom: 3px solid #33A0FF;

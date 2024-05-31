@@ -5,8 +5,9 @@ export const productApi = api.injectEndpoints({
     // Get request
     getProducts: build.query({
       query: (params) => ({ 
-        url: "/products?limit=8", 
-        params 
+        url: `/products`, 
+        method: "GET",
+        params
       }),
       providesTags:["Product"]
     }),

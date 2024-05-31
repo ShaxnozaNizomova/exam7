@@ -98,4 +98,14 @@
         padding: 20px;
         max-width: 1000px;
     }
+    .big__img img{
+        width: 320px;
+    }
+    .single__imgs img{
+        width: 65px;
+        height: 50px;
+    }
+    .share{
+        display: none;
+    }
 }

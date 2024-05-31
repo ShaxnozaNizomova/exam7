@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from '../../components/hero/Hero'
 import Products from '../../components/products/Products'
 import Banner from '../../components/banner/Banner'
@@ -9,11 +9,12 @@ import Search from '../../components/search/Search'
 import { useGetProductsQuery } from '../../context/api/productApi'
 
 function Home() {
-  let {data} = useGetProductsQuery()
+  const [offset, setOffset] = useState(1)
+  let {data} = useGetProductsQuery({limit: 4*offset})
   return (
     <div>
       <Hero/>
-      <Products data={data}/>
+      <Products data={data} offset={offset} setOffset={setOffset}/>
       <Banner/>
       <Support/>
       <News/>

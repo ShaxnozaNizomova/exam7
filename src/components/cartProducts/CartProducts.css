@@ -112,3 +112,95 @@ cursor: pointer;
     background-color: white;
     border: 0 solid white;
 }
+@media screen and (max-width: 1094px) {
+    .cart__items{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-bottom: 1px solid #F6F7F8;
+    }
+    .cart__menu1{
+        padding-right: 600px;
+        color: #22262A;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        font-family: Poppins;
+    }
+    .cart__title1{
+        color: #22262A;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: Poppins;
+        padding-right: 350px;
+    }
+    .cart__infos{
+        display: flex;
+        gap: 70px;
+    }
+    .card__total{
+        width: 330px;
+    }
+    .check__btn{
+        width: 330px;
+        padding: 12px 0;
+        background-color: #33A0FF;
+        border: 1px solid #33A0FF;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: Poppins;
+        margin-top: 8px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .cart__items{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        max-width: 740px;
+        margin: 0 auto;
+        border-bottom: 1px solid #F6F7F8;
+    }
+    .cart__menu1{
+        padding-right: 400px;
+        color: #22262A;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        font-family: Poppins;
+    }
+    .cart__title1{
+        color: #22262A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: Poppins;
+        padding-right: 260px;
+    }
+    .cart__infos{
+        display: flex;
+        gap: 45px;
+    }
+    .card__total{
+        width: 270px;
+    }
+    .check__btn{
+        width: 270px;
+        padding: 12px 0;
+        background-color: #33A0FF;
+        border: 1px solid #33A0FF;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: Poppins;
+        margin-top: 8px;
+    }
+    .voucher{
+        display: none;
+    }
+}

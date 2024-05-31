@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import './CartProducts.css'
 import del from '../../assets/images/del.svg'
 import Checkout from '../checkout/Checkout'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { removeItemFromCart , decrementCartQuantity, incrementCartQuantity, } from '../../context/cartSlice'
 function CartProducts({data}) {
    let dispatch = useDispatch()
+   let cart = useSelector(state => state.cart.value)
    let totalPrice = data?.reduce((sum,item) => sum + (item.quantity * item.price), 0)
    const [modal, setModal] = useState(false)
     let cartProducts = data?.map(item => (
@@ -52,7 +53,7 @@ function CartProducts({data}) {
       </div>
       {cartProducts}
       <div className='cart__contents'>
-        <div>
+        <div className='voucher'>
           <input className='cart__input' type="text" placeholder='Voucher Code'/>
           <button className='search__btn'>Redeem</button>
         </div>
@@ -77,7 +78,7 @@ function CartProducts({data}) {
             Checkout
            </button>
            <div>
-           {modal ? <Checkout closeModal={setModal} /> : <></>}
+           {modal ? <Checkout products={cart} closeModal={setModal} /> : <></>}
            </div>
         </div>
       </div>

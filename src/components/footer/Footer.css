@@ -1,6 +1,7 @@
 .footer{
     width: 100%;
     background-color: #BCDDFE;
+    margin-top: 30px;
 }
 .footer__content{
     display: flex;
@@ -35,7 +36,17 @@
 .footer__img{
     padding-bottom: 40px;
 }
+@media screen and (max-width: 1094px)  {
+    .footer__img{
+        display: none;
+    }
+}
 @media screen and (max-width: 768px)  {
+    .footer__img{
+        display: none;
+    }
+}
+@media screen and (max-width: 468px)  {
     .footer__img{
         display: none;
     }

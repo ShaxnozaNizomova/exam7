@@ -8,7 +8,8 @@ import Skeleton from '../skeleton/Skeleton'
 import cart from '../../assets/images/Cart.svg'
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { toggleLike } from '../../context/wishlistSlice'
-function Products({data}) {
+import { useGetProductsQuery } from '../../context/api/productApi';
+function Products({data, setOffset}) {
   let wishlist = useSelector(state => state.wishlist.value)
   const dispatch = useDispatch()
   let products = data?.map((el) => (
@@ -43,7 +44,7 @@ function Products({data}) {
          {products}
          </div>
            <div className='btn__box'>
-            <button>Load more</button>
+            <button onClick={()=> setOffset(p => p + 1)}>Load more</button>
            </div>
       </div>
   )
