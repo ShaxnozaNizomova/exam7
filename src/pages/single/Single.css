@@ -4,7 +4,7 @@
     padding-top: 20px;
 }
 .single{
-    max-width: 1245px;
+    max-width: 1345px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -22,15 +22,15 @@
 .singlepage{
     display: flex;
     justify-content: space-between;
-    max-width: 1245px;
+    max-width: 1345px;
     margin: 0 auto;
     padding-top: 90px;
 }
 .single__box{
     display: flex;
-    max-width: 926px;
+    max-width: 1326px;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 .single__title{
     color: #22262A;
@@ -41,6 +41,7 @@
 }
 .share{
     padding-top: 25px;
+    padding-bottom: 50px;
 }
 .single__text{
     color: #262626;
@@ -57,6 +58,24 @@
 .cart__single{
     display: flex;
     gap: 40px;
+}
+.best__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #C1C8CE;
+    padding-bottom: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.best__card{
+   border: 2px solid #F1F3F4;
+   border-radius: 5px;
+   width: 255px;
+   padding: 0;
+}
+.rating__best{
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 .add__btn{
     background-color: #BCDDFE;

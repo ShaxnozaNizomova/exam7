@@ -74,6 +74,11 @@
   
 @media screen and (max-width: 576px) {
     .checkout__items {
-      max-width: 90%; 
+      max-width: 70%; 
+    }
+}
+@media screen and (max-width: 476px) {
+    .checkout__items {
+      max-width: 40%; 
     }
 }

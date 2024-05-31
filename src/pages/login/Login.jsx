@@ -12,7 +12,7 @@ function Login() {
     Navigate("/admin")
   }
   if(isError){
-   alert("xato")
+   alert("Wrong Password or Username")
   }
   const handleSignUp = (e)=>{
     signUp({username,password})

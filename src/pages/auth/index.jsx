@@ -1,9 +1,11 @@
-import React from 'react'
-import { Outlet, Navigate } from 'react-router-dom'
+import React from 'react';
+import { Navigate } from 'react-router-dom';
 
-const Auth = () => {
-    let isLogin = localStorage.getItem("token")
-    return isLogin ? <Outlet/> : <Navigate replace to={"/login"}/>
+const Auth = ({ children }) => {
+    const isLogin = localStorage.getItem("token");
+
+    // If the user is logged in, render the child components, otherwise, redirect to the login page
+    return isLogin ? children : <Navigate to="/login" replace />;
 }
 
-export default Auth
+export default Auth;

@@ -10,6 +10,7 @@ import Login from './pages/login/Login'
 import TopNavbar from './components/topnavbar/TopNavbar'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import Auth from './pages/auth'
 function App() {
   return (
     <div>
@@ -21,7 +22,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/admin' element={<Admin/>}/>
+        <Route path='/admin' element={<Auth><Admin/></Auth>} />
         <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>

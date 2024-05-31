@@ -81,7 +81,12 @@ function Single() {
       </div>
      </div>
      <div className='bestselling'>
-     <img src={best} alt="" width={289}/>
+      <h4 className='best__title'>Best Seller</h4>
+    <div className='best__card'>
+     <img src={data?.image} alt={data?.title} width={250} height={229}/>
+     <img src={rate} alt="rating" className='rating__best' />
+     <p className='banner__dis'><span>$534,33</span> 24% Off</p>
+    </div>
      </div>
     </div>
     <div className='tabs'>
